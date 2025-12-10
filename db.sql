@@ -31,7 +31,7 @@ CREATE TABLE `menu` (
   `status` enum('available','hidden') DEFAULT 'available',
   `image` varchar(500) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,7 +40,7 @@ CREATE TABLE `menu` (
 
 LOCK TABLES `menu` WRITE;
 /*!40000 ALTER TABLE `menu` DISABLE KEYS */;
-INSERT INTO `menu` VALUES (1,'Phở bò',45000,'available',''),(2,'Bún chả',35000,'available',''),(3,'Trà chanh',15000,'available',''),(4,'Cơm rang dưa bò',40000,'available',''),(5,'Cafe sữa',20000,'hidden',''),(6,'Phở bò',45000,'available',''),(7,'Bún chả',35000,'available',''),(8,'Trà chanh',15000,'available',''),(9,'Cơm rang dưa bò',40000,'available',''),(10,'Cafe sữa',20000,'hidden','');
+INSERT INTO `menu` VALUES (1,'Phở bò',45000,'available','pho_bo_1.jpeg'),(2,'Bún chả',35000,'available',NULL),(3,'Trà chanh',15000,'available',NULL),(4,'Cơm rang dưa bò',40000,'available',NULL),(5,'Cafe sữa',20000,'hidden',NULL);
 /*!40000 ALTER TABLE `menu` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -53,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-08 21:30:11
+-- Dump completed on 2025-12-10 22:37:47
